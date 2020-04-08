@@ -34,12 +34,20 @@ if (condicao1) {
 }
 */
 
-const nome = 'Josefina'
-const sexo = 'F'
-const idade = 47
-const contribuicao = 28
-const homem = idade + contribuicao
-const mulher = homem
+const Mulher = {
+  sexo: "F" ,
+  nome: "Maria",
+  idade: 55,
+  contribuicao: 30 
+}
+const Homem = {
+  sexo: "M", 
+  nome: 'José', 
+  idade: "55",
+  contribuicao: 34
+}
+const homem = Homem.idade + Homem.contribuicao
+const mulher =  homem
 
 
 // tempo de contribuição mínimo para os homens - 35 anos, para as mulheres - 30.
@@ -47,20 +55,20 @@ const mulher = homem
 // Para homens, mínimo de 95 anos.
 // Para mulheres, mínimo de 85 anos.
 
-if (sexo == 'M'){
-  if (contribuicao >= 35 &&  homem >= 95){
-    console.log(`${nome}, você cumpriu todos os requisitos para se aposentar.`)
+if (Homem.sexo == 'M'){
+  if (homem.contribuicao >= 35 &&  homem >= 95){
+    console.log(`${Homem.nome}, você cumpriu todos os requisitos para se aposentar.`)
   }
   else {
-    console.log (`${nome}, infelizmente você não cumpre os requisitos mínimos para se apostar.`)
+    console.log (`${Homem.nome}, infelizmente você não cumpre os requisitos mínimos para se aposentar.`)
   }
 }
 
-if (sexo == 'F'){
-  if (contribuicao >= 30 &&  mulher >= 85){
-    console.log(`${nome}, você cumpriu todos os requisitos para se aposentar.`)
+if (Mulher.sexo == 'F'){
+  if (mulher.contribuicao >= 30 &&  mulher >= 85){
+    console.log(`${ Mulher.nome}, você cumpriu todos os requisitos para se aposentar.`)
   }
   else {
-    console.log (`${nome}, infelizmente você não cumpre os requisitos mínimos para se apostar.`)
+    console.log (`${Mulher.nome}, infelizmente você não cumpre os requisitos mínimos para se aposentar.`)
   }
 }
