@@ -36,11 +36,26 @@ if (condicao1) {
 
 const nome = 'José Viana'
 const sexo = 'M'
-const idade = 65
-const contribuicao = 30
+const idade = 50
+const contribuicao = 35
 
 // tempo de contribuição mínimo para os homens - 35 anos, para as mulheres - 30.
 // Regra 85-95 -> idade + tempo de contribuição
 // Para homens, mínimo de 95 anos.
 // Para mulheres, mínimo de 85 anos.
+if (sexo == 'M'){
+  if (contribuicao >=35){
+    console.log('Tempo de contribuição dentro dos padrões.')
+    if (idade+contribuicao >=95){
+      console.log(`${nome}, você cumpriu todos os requisitos para se aposentar.`)
+    }else{
+      console.log (`${nome}, infelizmente você não cumpre os requisitos mínimos para se apostar.`)
+    }
+  }else{
+    console.log(`Tempo de contribuição insuficiente. Ainda faltam ${35 - contribuicao} anos de contribuição para se aposentar.`)
+    }
+
+}
+
+
 
