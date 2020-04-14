@@ -2,26 +2,41 @@
 // das notas dos alunos e envia
 // mensagem do cálculo da média.
 
-const aluno1 = 'George'
-const nota1 = 9.8
+const AlunosdaTurmaA = [
+    {nome:"George", nota: 9.8},
+    {nome: "Matheus", nota: 5},
+    {nome: "fulano", nota: 3}
+
+]
 
 
-const aluno2 = "Matheus"
-const nota2 = 5
+const AlunosdaTurmaB = [
+    {nome: "Cleito",nota: 10},
+    {nome: "Aristides",nota: 7},
+    {nome: "ciclano", nota: 5}
 
-const aluno3 = 'fulano'
-const nota3 = 3
+]
 
 
-const media = (nota1 + nota2 + nota3) / 3 
-
-console.log(`a media foi ${media}`)
-
+function calculamedia(Alunos) {
+    return  (Alunos[0].nota + Alunos[1].nota + Alunos[2].nota) / 3
+    
+}
+ 
+const media1 = calculamedia(AlunosdaTurmaA)
+console.log(calculamedia(AlunosdaTurmaA))
+const media2 = calculamedia(AlunosdaTurmaB)
+console.log(calculamedia(AlunosdaTurmaB))
 // Se a média foi maior que 7, parabenizar a turma.
 
-if (media > 7){ 
-    return console.log('Parabéns')
+function enviarmensagem(media, turma){
+    if (media > 7){ 
+        return console.log(`Parabéns ${turma}, sua média foi: ${media}`)
+    }
+    else{
+        return console.log(`Média abaixo do esperado. A média da turma ${turma} foi: ${media}`)
+    }
 }
-else{
-    return console.log('Média abaixo do esperado.')
-}
+
+enviarmensagem(media1, 'turmaA')
+enviarmensagem(media2, 'TurmaB')
