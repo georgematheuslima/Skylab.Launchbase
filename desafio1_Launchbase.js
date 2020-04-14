@@ -18,15 +18,16 @@ SE o IMC menor que 29.9: Carlos você não está acima do peso;
 
 // Recebendo os Dados
 const nome = 'Bruno Alves'
-const peso = 89.800
+const peso = 88
 const altura = 1.88
 const sexo = 'Masculino'
 // Calculando imc
-const imc = peso/ (altura**2)
+const imc = peso/ (altura*altura)
 
 // Retornando o resultado do imc.
 if (imc >=30){
     console.log(`${nome}, você está acima do peso. Seu IMC É : ${imc}`)
+    console.log(`Seu imc está ${imc - 30} pontos acima do limite padrão.`)
 }else{
     console.log(`${nome}, você não está acima do peso. Seu IMC É : ${imc}`)
 }
