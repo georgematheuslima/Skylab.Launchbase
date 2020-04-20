@@ -16,7 +16,7 @@ SE o IMC maior ou igual a 30: Carlos você está acima do peso;
 SE o IMC menor que 29.9: Carlos você não está acima do peso;
 */
 
-// Recebendo os Dados
+// Recebendo os  Dados
 const nome = 'Bruno Alves'
 const peso = 88
 const altura = 1.88
