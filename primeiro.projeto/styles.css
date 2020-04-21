@@ -70,3 +70,37 @@ header{
     border-bottom: 0.5px solid #50fa7b;
 
 }
+
+/* === Cards ===*/
+
+.cards{
+    max-width: 320px ;
+    margin: 0 auto
+}
+
+.card{
+    background-color: #a4b0f552;
+}
+
+.card__image-container{
+    width: 100%;
+}
+
+.card__content,
+.card__link{
+    text-align: center;
+    filter: brightness(110%)
+    
+}
+.card__link a:hover{
+    color: #50fa7b;
+    transition: color 500ms ;
+}
+.card__info{
+    padding: 12px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(245, 245, 245, 0.534);
+    filter: brightness(80%);
+    border-radius: 20px;
+}
