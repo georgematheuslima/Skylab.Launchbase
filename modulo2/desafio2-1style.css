@@ -1,0 +1,34 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+
+*{
+    margin:0;
+    padding:0;
+    border:0
+}
+header{
+    border-bottom: 10px solid rgba(0, 0, 0, 0.329);
+    background: rgba(42, 28, 170, 0.281);
+
+
+}
+body{
+    background: rgba(36, 53, 145, 0.76);
+    font-family: 'Roboto', sans-serif;
+    }
+
+header div{
+    text-align:left;
+}
+header a{
+    color: rgba(3, 5, 7, 0.678);
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px 30px;
+    text-decoration: none;
+}
+header div a:hover {
+    color: rgba(39, 20, 121, 0.568);
+    transition: 500ms;
+}
+
+
