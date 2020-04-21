@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0
+}
+
+body{
+    background: rgba(96, 86, 151, 0.863);
+    font-family: 'Roboto', sans-serif;
+    }
+
+header div{
+    text-align:center;
+}
+header h1{
+    color: rgb(70, 33, 139);
+    font-size: 50px;
+    line-height: 30px;
+    margin: 30px 30px;
+    text-decoration: none;
+}
+header h2{
+    color: rgba(44, 24, 82, 0.829);
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px 30px;
+    text-decoration: none;
+}
+header img{
+    border-radius: 50%;
+    border: 3px solid #422f8f7c;
+    height: 150px;
+}
+body div li{
+    text-align:left;
+    color: rgba(44, 24, 82, 0.829);
+    font-size: 20px;
+    line-height: 10px;
+    margin: 20px 20px;
+    text-decoration: none;
+
+}
+.tecnologias{
+    color: rgb(70, 33, 139);
+    font-size: 25px;
+    line-height: 50px;
+    margin: 30px 30px;
+    text-decoration: underline;
+}
+.tecnologias h1{
+    color: rgb(70, 33, 139);
+    font-size: 30px;
+    line-height: 20px;
+    margin: 20px 20px;
+    text-decoration: none;
+}
+.redes{
+    text-align: center;
+}
+.redes a{
+    text-align: center;
+    color: rgba(31, 42, 48, 0.527);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px 20px;
+    border-bottom: 0.5px solid #03aff3;
+}
+
+.redes a:hover{
+    color: #00b7ff;
+    transition: color 500ms;
+    
+}
